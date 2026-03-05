@@ -82,3 +82,13 @@
     background-clip: text;
   }
 }
+
+@keyframes pulse-line {
+  0% { stroke-dashoffset: 400; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.animate-pulse-line {
+  stroke-dasharray: 400;
+  animation: pulse-line 2s ease-in-out infinite;
+}
